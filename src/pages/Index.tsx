@@ -141,9 +141,7 @@ const Index = () => {
               </div>
               <div className="md:col-span-2">
                 <p className="text-lg text-foreground leading-relaxed">
-                  Adeena Ramzan is an aspiring Machine Learning Engineer from Karachi with hands-on experience in ML, Deep Learning, NLP, and model deployment. 
-                  Skilled in Python, TensorFlow, PyTorch, and modern AI tools, she also has a background in WordPress development. 
-                  Adeena is passionate about combining AI with web technologies and is actively seeking internship opportunities to grow and contribute to impactful AI projects.
+                  AI and ML engineering enthusiast with hands-on experience in Deep Learning, NLP, classical ML, and deploying models using FastAPI, Streamlit, and Gradio. Skilled in Python, TensorFlow, PyTorch, and associated data workflows. Also familiar with WordPress customization as a secondary skill. Actively looking for an internship to apply and deepen AI engineering skills in real-world projects.
                 </p>
               </div>
             </div>
@@ -160,35 +158,81 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
               {
-                title: "Machine Learning",
-                icon: <Brain className="w-8 h-8" />,
-                skills: ["Regression", "Classification", "Feature Engineering", "Hyperparameter Tuning"],
-              },
-              {
-                title: "Deep Learning & NLP",
-                icon: <Cpu className="w-8 h-8" />,
-                skills: ["CNNs", "ResNet", "MobileNet", "Transformers", "BERT", "Sentiment Analysis"],
-              },
-              {
-                title: "AI Tools",
-                icon: <Sparkles className="w-8 h-8" />,
-                skills: ["TensorFlow", "PyTorch", "Keras", "Scikit-learn", "Pandas", "NumPy", "Hugging Face"],
-              },
-              {
-                title: "Deployment",
-                icon: <Database className="w-8 h-8" />,
-                skills: ["FastAPI", "Streamlit", "Gradio"],
-              },
-              {
-                title: "Web Development",
-                icon: <Code className="w-8 h-8" />,
-                skills: ["WordPress", "Elementor", "Custom CSS"],
-              },
-              {
-                title: "Math & Core Concepts",
-                icon: <Brain className="w-8 h-8" />,
-                skills: ["Probability", "Statistics", "Linear Algebra", "Calculus"],
-              },
+  title: "Machine Learning",
+  icon: <Brain className="w-8 h-8" />,
+  skills: [
+    "Python",
+    "Regression",
+    "Classification",
+    "Model Evaluation",
+    "Feature Engineering",
+    "Hyperparameter Tuning",
+    "Cross-validation"
+  ],
+},
+{
+  title: "Deep Learning & NLP",
+  icon: <Cpu className="w-8 h-8" />,
+  skills: [
+    "Neural Networks",
+    "CNNs",
+    "ResNet",
+    "MobileNet",
+    "Transformers",
+    "Transfer Learning",
+    "Text Classification",
+    "Sentiment Analysis"
+  ],
+},
+{
+  title: "AI Tools & Frameworks",
+  icon: <Sparkles className="w-8 h-8" />,
+  skills: [
+    "TensorFlow",
+    "PyTorch",
+    "Keras",
+    "Scikit-learn",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn",
+    "Hugging Face",
+    "Git",
+    "GitHub"
+  ],
+},
+{
+  title: "Deployment",
+  icon: <Database className="w-8 h-8" />,
+  skills: [
+    "FastAPI",
+    "Streamlit",
+    "Gradio"
+  ],
+},
+{
+  title: "Web Development (Side Skill)",
+  icon: <Code className="w-8 h-8" />,
+  skills: [
+    "WordPress",
+    "Elementor",
+    "Custom CSS",
+    "Theme Customization",
+    "Plugin Configuration",
+    "Responsive Design"
+  ],
+},
+{
+  title: "Math & Core Concepts",
+  icon: <Brain className="w-8 h-8" />,
+  skills: [
+    "Statistics",
+    "Probability",
+    "Linear Algebra",
+    "Calculus"
+  ],
+},
+
             ].map((category, idx) => (
               <Card
                 key={idx}
@@ -225,10 +269,13 @@ const Index = () => {
                 company: "Wenawa",
                 period: "2025 – Present",
                 points: [
-                  "Developed deep learning models (ResNet-50) for skin disease detection",
-                  "Improved accuracy via data augmentation and preprocessing pipelines",
-                  "Deployed models with Gradio on Hugging Face for real-time inference",
-                ],
+  "Developed and optimized deep learning models for skin-disease detection using ResNet-50, achieving strong validation performance",
+  "Engineered preprocessing and augmentation pipelines to improve model robustness and reduce overfitting",
+  "Deployed trained models via Gradio on Hugging Face Spaces for real-time predictions",
+  "Conducted technical research on open-source projects (e.g., Averion Labs Front-End) to enhance AI–UI integration",
+  "Built a Sindhi→Urdu/English translation tool using Google Translate API with an Express.js backend and custom frontend"
+],
+
               },
               {
                 title: "WordPress Intern",
@@ -240,6 +287,17 @@ const Index = () => {
                   "Fixed layout and performance issues to deliver client-ready solutions",
                 ],
               },
+              {
+  title: "Brand Ambassador Intern",
+  company: "DataCrumbs",
+  period: "2025",
+  points: [
+    "Promoted DataCrumbs’ AI and automation programs through community outreach and online engagement",
+    "Guided students and learners toward relevant AI courses, events, and hands-on learning resources",
+    "Represented the brand during cohort activities and supported community growth through active participation",
+  ],
+},
+
             ].map((exp, idx) => (
               <Card key={idx} className="p-8 glassmorphism card-glow relative overflow-hidden group">
                 <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-primary to-secondary transform origin-top scale-y-0 group-hover:scale-y-100 transition-transform duration-500"></div>
@@ -276,8 +334,8 @@ const Index = () => {
             {[
               {
                 title: "AI Skin Disease Detection",
-                description: "ResNet-50 classifier trained on skin disease images. Deployed using Gradio with an interactive UI.",
-                tech: "Deep Learning / Computer Vision",
+                description: "ResNet-50 classifier trained on skin disease images. Deployed using Gradio with an interactive UI. Fine-tuned for high accuracy.",
+                tech: "Deep Learning / CNN",
                 githubUrl: "https://github.com/AdeenaRamzan/ai-dermnet-classifier",
                 demoUrl: "https://huggingface.co/spaces/AdeenaRamzan93/AI-DermNet-Classifier",
                 image: skinDiseaseImg,
