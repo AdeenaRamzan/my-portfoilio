@@ -9,6 +9,17 @@ import skinDiseaseImg from "@/assets/skin-disease-project.jpg";
 import emotionDetectionImg from "@/assets/emotion-detection-project.png";
 import churnPredictionImg from "@/assets/churn-prediction-project.webp";
 import heartHealthImg from "@/assets/heart-health-project.png";
+import certDeepLearning from "@/assets/certifications/deep-learning.png";
+import certDatacrumbs from "@/assets/certifications/datacrumbs.png";
+import certN8n from "@/assets/certifications/n8n.png";
+import certNlpIntro from "@/assets/certifications/ms.png";
+import certIbm from "@/assets/certifications/ibm.png";
+import certCisco from "@/assets/certifications/cisco.png";
+import certPandasNumpy from "@/assets/certifications/pandas-numpy.png";
+import certGithub from "@/assets/certifications/github-concepts.png";
+import certSoftech from "@/assets/certifications/softech.png";
+import certGoogleSoft from "@/assets/certifications/google-softskills.png";
+import certTs from "@/assets/certifications/ts.png";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("hero");
@@ -331,7 +342,7 @@ const Index = () => {
       </section>
 
       {/* Certifications Section */}
-     <section id="certifications" className="py-20 bg-background">
+    <section id="certifications" className="py-20 bg-background">
   <div className="container mx-auto px-4">
     <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
       Certifications
@@ -339,17 +350,17 @@ const Index = () => {
 
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
       {[
-        { title: "Deep Learning Specialization", org: "DeepLearning.AI", image: "deep-learning.png" },
-        { title: "AI Powered Website & Chatbot Masterclass", org: "DataCrumbs", image: "datacrumbs.png" },
-        { title: "N8N Chatbot Lab", org: "DataCrumbs", image: "n8n.png" },
-        { title: "Introduction to natural language processing concepts", org: "Microsoft Learning", image: "ms.png" },
-        { title: "Machine Learning Introduction for Everyone", org: "IBM", image: "ibm.png" },
-        { title: "Python Essentials 1", org: "Cisco", image: "cisco.png" },
-        { title: "Python for Data Analysis (Pandas & NumPy)", org: "Coursera", image: "pandas-numpy.png" },
-        { title: "Introduction to GitHub Concepts", org: "DataCamp", image: "github-concepts.png" },
-         { title: "Web Designing", org: "Softech", image: "softech.png" },
-        { title: "Google Soft Skills Certification", org: "Google", image: "google-softskills.png" },
-        { title: "TypeScript String Properties and Methods", org: "Coursera", image: "ts.png" },
+        { title: "Deep Learning Specialization", org: "DeepLearning.AI", image: certDeepLearning },
+        { title: "AI Powered Website & Chatbot Masterclass", org: "DataCrumbs", image: certDatacrumbs },
+        { title: "N8N Chatbot Lab", org: "DataCrumbs", image: certN8n },
+        { title: "Introduction to natural language processing concepts", org: "Microsoft Learning", image: certNlpIntro },
+        { title: "Machine Learning Introduction for Everyone", org: "IBM", image: certIbm },
+        { title: "Python Essentials 1", org: "Cisco", image: certCisco },
+        { title: "Python for Data Analysis (Pandas & NumPy)", org: "Coursera", image: certPandasNumpy },
+        { title: "Introduction to GitHub Concepts", org: "DataCamp", image: certGithub },
+        { title: "Web Designing", org: "Softech", image: certSoftech },
+        { title: "Google Soft Skills Certification", org: "Google", image: certGoogleSoft },
+        { title: "TypeScript String Properties and Methods", org: "Coursera", image: certTs },
       ].map((cert, idx) => (
         <Card
           key={idx}
@@ -357,7 +368,7 @@ const Index = () => {
         >
           <div className="h-48 rounded-lg mb-4 overflow-hidden border border-primary/20 group-hover:border-primary/50 transition-colors">
             <img
-              src={`/src/assets/certifications/${cert.image}`}
+              src={cert.image}
               alt={cert.title}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             />
