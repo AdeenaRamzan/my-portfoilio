@@ -402,7 +402,12 @@ const Index = () => {
           {/* Hidden FormSubmit options */}
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_subject" value="New Contact Message From Portfolio!" />
-          <input type="hidden" name="_next" value="https://adeena-ai-glow.lovable.app/#contact" />
+          <input
+  type="hidden"
+  name="_next"
+  value="https://adeena-ai-portfolio.vercel.app/#contact"   // use your actual Vercel URL
+/>
+
 
           <div>
             <label className="text-sm font-medium mb-2 block">Name</label>
