@@ -54,7 +54,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              ADEENA RAMZAN
+              AR Portfolio
             </h1>
             <div className="hidden md:flex gap-6">
               {["hero", "about", "skills", "experience", "projects", "certifications", "contact"].map((section) => (
