@@ -405,7 +405,7 @@ const Index = () => {
           <input
   type="hidden"
   name="_next"
-  value="https://adeena-ai-portfolio.vercel.app/#contact"   // use your actual Vercel URL
+  value="https://adeena-ramzan-portfolio.vercel.app//#contact"  
 />
 
 
