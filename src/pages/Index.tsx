@@ -442,37 +442,37 @@ const Index = () => {
 
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-card/30">
+     <section id="contact" className="py-20 bg-card/30">
   <div className="container mx-auto px-4">
-    <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+    <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 
+      bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
       Contact Me
     </h2>
 
-    <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-      <Card className="p-8 glassmorphism card-glow">
+    <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+      <Card className="p-4 sm:p-6 md:p-8 glassmorphism card-glow w-full">
 
-        {/* EMAIL-SENDING FORM (Style unchanged) */}
+        {/* EMAIL-SENDING FORM (Style unchanged, but paddings adjusted) */}
         <form
           action="https://formsubmit.co/aradeenaramzan@gmail.com"
           method="POST"
-          className="space-y-6"
+          className="space-y-4 sm:space-y-6"
         >
           {/* Hidden FormSubmit options */}
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_subject" value="New Contact Message From Portfolio!" />
           <input
-  type="hidden"
-  name="_next"
-  value="https://adeena-ramzan-portfolio.vercel.app//#contact"  
-/>
-
+            type="hidden"
+            name="_next"
+            value="https://adeena-ramzan-portfolio.vercel.app//#contact"
+          />
 
           <div>
             <label className="text-sm font-medium mb-2 block">Name</label>
             <Input
               name="name"
               placeholder="Your name"
-              className="bg-background/50"
+              className="bg-background/50 w-full"
               required
             />
           </div>
@@ -483,7 +483,7 @@ const Index = () => {
               type="email"
               name="email"
               placeholder="your.email@example.com"
-              className="bg-background/50"
+              className="bg-background/50 w-full"
               required
             />
           </div>
@@ -494,7 +494,7 @@ const Index = () => {
               name="message"
               placeholder="Your message..."
               rows={5}
-              className="bg-background/50"
+              className="bg-background/50 w-full"
               required
             />
           </div>
@@ -506,9 +506,8 @@ const Index = () => {
 
       </Card>
 
-      <Card className="p-8 glassmorphism card-glow flex flex-col justify-center space-y-6">
+      <Card className="p-4 sm:p-6 md:p-8 glassmorphism card-glow flex flex-col justify-center space-y-6 w-full">
         <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
-
         <div className="space-y-4">
           <a
             href="mailto:aradeenaramzan@gmail.com"
@@ -548,6 +547,7 @@ const Index = () => {
     </div>
   </div>
 </section>
+
 
       {/* Footer */}
       <footer className="py-8 bg-background border-t border-border/50">
