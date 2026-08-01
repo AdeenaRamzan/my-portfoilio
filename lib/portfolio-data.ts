@@ -111,30 +111,49 @@ export const featuredProjects: FeaturedProject[] = [
     ],
   },
   {
-    id: 'care4diabetics',
-    tag: 'Featured · Healthcare ML · Real Clinical Data',
-    title: 'Diabetic Complication Prediction System',
+    id: 'multi-agent',
+    tag: 'Featured · Generative AI',
+    title: 'ResearchMind — Autonomous Multi-Agent AI Research Network & SaaS Platform',
     description:
-      'Extended a real hospital application with DOW University Hospital, Karachi. Two binary classification models: LightGBM for retinopathy prediction (ROC-AUC 0.9315) and Random Forest for neuropathy prediction (ROC-AUC 0.9370), trained on a real 1,500-patient Pakistani clinical dataset with 50-fold cross-validation and zero data leakage.',
+      'ResearchMind is an open-source, full-stack multi-agent AI research suite designed to automate deep academic, market, and technical research. Built with a 4-stage sequential agentic architecture, it replaces manual web research by orchestrating specialized AI agents to gather intelligence, scrape deep web body content, write publication-grade reports, and perform peer-review evaluations in seconds.',
     hero: {
-      src: '/Care4Diabetes.jfif',
-      alt: 'Model evaluation notebook output showing ROC-AUC results',
-      caption: 'Model evaluation · ROC-AUC output',
+      src: '/Multi-agent-research-system.png',
+      alt: 'ResearchMind dashboard interface showing autonomous research generation',
+      caption: 'ResearchMind dashboard · 4-agent flow',
     },
     metrics: [
-      { label: 'ROC-AUC', value: '0.93+' },
-      { label: 'Real patients', value: '1,500' },
-      { label: 'Cross-validation', value: '50-fold' },
+      { label: 'Avg Critic Score', value: '9.6/10' },
+      { label: 'Agent Pipeline', value: '4-Stage' },
+      { label: 'Groq Fallover', value: 'Auto-Fallback' },
     ],
-    tags: ['Python', 'LightGBM', 'Random Forest', 'Scikit-learn', 'Flask'],
+    tags: [
+      'LangChain',
+      'Groq LPU',
+      'FastAPI',
+      'React 19',
+      'SSE Streaming',
+      'DuckDuckGo Search',
+      'BeautifulSoup4',
+      'Vite',
+      'Vanilla CSS'
+    ],
     links: [
       {
+        label: 'Live Demo',
+        href: 'https://multi-agent-research-system-khaki.vercel.app/',
+        variant: 'primary',
+      },
+      {
+        label: 'Video Demo',
+        href: 'https://youtu.be/d9dO8Y8GpmE',
+        variant: 'outline',
+      },
+      {
         label: 'GitHub',
-        href: 'https://github.com/ZobiaShakil/Care4Diabetics',
+        href: 'https://github.com/AdeenaRamzan/Multi-agent-research-system',
         variant: 'outline',
       },
     ],
-    note: 'In collaboration with DOW University Hospital, repo maintained under a collaborator\u2019s account. Clinical tool, no public demo.',
   },
 ]
 
@@ -162,16 +181,16 @@ export const gridProjects: GridProject[] = [
     github: 'https://github.com/AdeenaRamzan/voicesphere-ai',
   },
   {
-    id: 'multi-agent',
-    category: 'generative-ai',
-    categoryLabel: 'Generative AI',
-    name: 'Multi-Agent Research System',
+    id: 'care4diabetics',
+    category: 'healthcare-ml',
+    categoryLabel: 'Healthcare ML',
+    name: 'Diabetic Complication Prediction System',
     description:
-      'Autonomous multi-agent AI that automates deep research, orchestrating specialized agents to synthesize reports from live web search.',
-    image: { src: '/Multi-agent-research-system.png', alt: 'Multi-agent research system report interface' },
-    tags: ['LangChain', 'Groq', 'SSE Streaming', 'React 19'],
-    demo: 'https://multi-agent-research-system-khaki.vercel.app/',
-    github: 'https://github.com/AdeenaRamzan/Multi-agent-research-system',
+      'LightGBM for retinopathy prediction (ROC-AUC 0.9315) and Random Forest for neuropathy prediction (ROC-AUC 0.9370), trained on a real 1,500-patient dataset from DOW University Hospital.',
+    image: { src: '/Care4Diabetes.jfif', alt: 'Diabetic Complication Prediction System evaluation output' },
+    tags: ['LightGBM', 'Random Forest', 'Scikit-learn', 'Flask'],
+    github: 'https://github.com/ZobiaShakil/Care4Diabetics',
+    badge: 'Clinical Tool',
   },
   {
     id: 'dermnet',
