@@ -174,9 +174,9 @@ export const gridProjects: GridProject[] = [
     categoryLabel: 'Generative AI',
     name: 'VoiceSphere AI',
     description:
-      'Real-time voice AI assistant with speech-to-text, LLM reasoning, and natural text-to-speech.',
+      'Real-time speech assistant combining ultra-low-latency Whisper Large v3 (via Groq LPU) and Llama 3.3 (70B). Features a zero-config multi-language pipeline, an embeddable Shadow DOM widget, dynamic Canvas audio spectrum visualizer, and live typewriter captions.',
     image: { src: '/VoiceSphere-ai.png', alt: 'VoiceSphere AI voice assistant interface' },
-    tags: ['LLM', 'Speech-to-Text', 'TTS', 'React'],
+    tags: ['Whisper Large v3', 'Llama 3.3 (70B)', 'FastAPI', 'Web Audio API', 'Shadow DOM', 'gTTS'],
     demo: 'https://voicesphere-ai.vercel.app/',
     github: 'https://github.com/AdeenaRamzan/voicesphere-ai',
   },
